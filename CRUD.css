@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@200;300;400;500&family=Poppins:wght@100;400;500;600;900&display=swap');
+
+*{
+   font-family: 'Overpass', sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   color: #ffff;
+}
+/* Viewpoint */
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: #6C7A89;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+    background: #005AA7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+img {
+    position: relative; 
+    top: -240px;
+    left: 180px;
+    width: 70px; 
+}
+
+/* Painel */
+.box {
+    width: 500px;
+    height: 400px;
+    width: 60%;
+    height: 70%;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    backdrop-filter: blur(5px) saturate(100%);
+    -webkit-backdrop-filter: blur(5px) saturate(100%);
+    background-color: rgba(255, 255, 255, 0.0);
+    border: 3px solid rgba(255, 255, 255, 0.125);
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 25px 15px rgba(31,18,82,0.7);
+    -moz-box-shadow: 0px 0px 25px 15px rgba(31,18,82,0.7);
+    box-shadow: 0px 0px 25px 15px rgba(31,18,82,0.7);
+}
+/* Título */
+h1 {
+    margin: 20px;
+    font-size: clamp(1.25em, 1em + 2vw, 2.5em);
+    text-shadow: 3px 3px #3b4685;
+}
+
+/* Sub-Título */
+h2, h3 {
+    margin: 20px;
+    font-size: clamp(0.5em, 1em + 1vw, 1.5em);
+    text-shadow: 2px 2px #3b4685;
+}
+/* Entrada */
+input {
+    border-radius: 5px;  
+    color: #ffff; 
+    text-shadow: 0.5px 0.5px #3b4685;
+    background-color: lightgray;
+    backdrop-filter: blur(5px) saturate(100%);
+    -webkit-backdrop-filter: blur(5px) saturate(100%);
+    background-color: rgba(255, 255, 255, 0.4);
+    outline: 0;
+}
+/* Lista de cadastro */
+ul, li{
+    list-style-type: none;
+}
+/* Edição dos dados */
+.clicavel{
+    cursor:pointer;
+}
+/* Botão de exclusão */
+.deleteButton{
+    color: #fff;
+    font-weight: bold;
+    background-color: #d61c1c;
+    margin-right: 10px;
+    border-radius: 50%;
+    width: 15px;
+    
+}
+/* Responsividade */
+@media screen and (max-width: 950px) {
+
+    img {
+        width: 60px; 
+        left: 150px;
+     }
+
+}
+
+@media screen and (max-width: 850px) {
+
+    .container{
+    background: #005AA7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+         
+    }
+
+    img {
+        width: 60px; 
+        left: 120px;
+     }
+
+}
+
+@media screen and (max-width: 750px) {
+
+    .container{
+    background: #005AA7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+         
+    }
+
+    img {
+       width: 50px; 
+       left: 70px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .container{
+        background: #005AA7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+         
+    }
+    img {
+        width: 40px; 
+        left: 50px;
+     }
+}
